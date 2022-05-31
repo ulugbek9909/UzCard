@@ -1,28 +1,1061 @@
-25 мая 2022 - 10:24:55.138 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 5163 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
-25 мая 2022 - 10:24:55.139 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
-25 мая 2022 - 10:24:55.139 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
-25 мая 2022 - 10:24:55.258 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-25 мая 2022 - 10:24:55.258 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-25 мая 2022 - 10:24:56.638 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-25 мая 2022 - 10:24:56.653 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
-25 мая 2022 - 10:24:57.070 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
-25 мая 2022 - 10:24:57.075 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
-25 мая 2022 - 10:24:57.075 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
-25 мая 2022 - 10:24:57.107 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
-25 мая 2022 - 10:24:57.107 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1849 ms
-25 мая 2022 - 10:24:57.183 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
-25 мая 2022 - 10:24:57.213 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
-25 мая 2022 - 10:24:57.302 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-25 мая 2022 - 10:24:57.372 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
-25 мая 2022 - 10:24:57.555 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
-25 мая 2022 - 10:24:57.566 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-25 мая 2022 - 10:24:57.682 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-25 мая 2022 - 10:24:57.687 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
-25 мая 2022 - 10:24:57.724 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-25 мая 2022 - 10:24:57.836 - o.s.s.web.DefaultSecurityFilterChain -  INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@768e4da7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e7f05b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@19d13e4, org.springframework.security.web.header.HeaderWriterFilter@503ce246, org.springframework.security.web.authentication.logout.LogoutFilter@5eb12de8, org.springframework.security.web.session.ConcurrentSessionFilter@5b52da58, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3b2a810b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38eef15f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3926ede9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f60aa8b, org.springframework.security.web.session.SessionManagementFilter@1b87256e, org.springframework.security.web.access.ExceptionTranslationFilter@7cb0c6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a6e4a3f]
-25 мая 2022 - 10:24:58.028 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
-25 мая 2022 - 10:24:58.052 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
-25 мая 2022 - 10:24:58.065 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 3.242 seconds (JVM running for 3.855)
-25 мая 2022 - 10:25:09.527 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
-25 мая 2022 - 10:25:09.528 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
-25 мая 2022 - 10:25:09.529 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 10:55:15.359 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 6580 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 10:55:15.362 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 10:55:15.363 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 10:55:15.402 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 10:55:15.402 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 10:55:15.997 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 10:55:16.032 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 10:55:16.585 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 10:55:16.591 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 10:55:16.591 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 10:55:16.634 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 10:55:16.634 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1231 ms
+26 мая 2022 - 10:55:16.732 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 10:55:16.763 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 10:55:16.856 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 10:55:16.901 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 10:55:17.041 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 10:55:17.053 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 10:55:17.148 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 10:55:17.231 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  ERROR - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.entity.TransactionsEntity column: from_card (should be mapped with insert="false" update="false")
+26 мая 2022 - 10:55:17.231 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.entity.TransactionsEntity column: from_card (should be mapped with insert="false" update="false")
+26 мая 2022 - 10:55:17.232 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 10:55:17.249 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 10:55:17.251 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+26 мая 2022 - 10:55:17.259 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26 мая 2022 - 10:55:17.271 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.entity.TransactionsEntity column: from_card (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.company.UzCardApplication.main(UzCardApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.entity.TransactionsEntity column: from_card (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.company.entity.TransactionsEntity column: from_card (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:895)
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:913)
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:935)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:637)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+26 мая 2022 - 10:56:25.867 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 6689 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 10:56:25.868 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 10:56:25.869 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 10:56:25.909 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 10:56:25.909 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 10:56:26.476 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 10:56:26.509 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 10:56:26.884 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 10:56:26.889 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 10:56:26.889 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 10:56:26.926 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 10:56:26.927 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1017 ms
+26 мая 2022 - 10:56:27.003 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 10:56:27.020 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 10:56:27.066 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 10:56:27.112 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 10:56:27.284 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 10:56:27.294 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 10:56:27.396 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 10:56:27.692 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - SQL Warning Code: 0, SQLState: 00000
+26 мая 2022 - 10:56:27.693 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - constraint "uk_bb0kfgqk5olyqio9bejcgu970" of relation "playlist" does not exist, skipping
+26 мая 2022 - 10:56:27.702 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 10:56:27.710 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 10:56:27.738 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 10:56:27.893 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+26 мая 2022 - 10:56:27.894 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 10:56:27.897 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 10:56:27.910 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 10:56:27.914 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+26 мая 2022 - 10:56:27.932 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26 мая 2022 - 10:56:27.957 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.company.UzCardApplication.main(UzCardApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:172)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:139)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 71 common frames omitted
+26 мая 2022 - 10:56:49.744 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 6786 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 10:56:49.745 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 10:56:49.746 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 10:56:49.781 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 10:56:49.782 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 10:56:50.301 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 10:56:50.331 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 10:56:50.690 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 10:56:50.694 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 10:56:50.695 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 10:56:50.726 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 10:56:50.726 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 944 ms
+26 мая 2022 - 10:56:50.809 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 10:56:50.825 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 10:56:50.869 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 10:56:50.908 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 10:56:51.080 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 10:56:51.089 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 10:56:51.170 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 10:56:51.447 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 10:56:51.450 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 10:56:51.479 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 10:56:51.609 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+26 мая 2022 - 10:56:51.609 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 10:56:51.611 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 10:56:51.616 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 10:56:51.619 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+26 мая 2022 - 10:56:51.627 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26 мая 2022 - 10:56:51.640 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.company.UzCardApplication.main(UzCardApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:172)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:139)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 71 common frames omitted
+26 мая 2022 - 10:59:38.717 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 7002 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 10:59:38.718 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 10:59:38.719 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 10:59:38.756 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 10:59:38.756 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 10:59:39.378 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 10:59:39.418 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 10:59:39.891 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 10:59:39.898 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 10:59:39.899 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 10:59:39.944 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 10:59:39.944 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1187 ms
+26 мая 2022 - 10:59:40.036 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 10:59:40.060 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 10:59:40.150 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 10:59:40.203 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 10:59:40.381 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 10:59:40.392 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 10:59:40.477 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 10:59:40.795 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 10:59:40.801 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 10:59:40.838 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 10:59:41.018 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+26 мая 2022 - 10:59:41.019 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 10:59:41.021 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 10:59:41.028 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 10:59:41.033 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+26 мая 2022 - 10:59:41.045 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26 мая 2022 - 10:59:41.069 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.company.UzCardApplication.main(UzCardApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:172)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:139)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 71 common frames omitted
+26 мая 2022 - 11:06:14.524 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 7290 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:06:14.526 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:06:14.526 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:06:14.569 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:06:14.569 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:06:15.137 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:06:15.164 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:06:15.515 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:06:15.520 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:06:15.520 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:06:15.556 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:06:15.556 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 986 ms
+26 мая 2022 - 11:06:15.628 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:06:15.644 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:06:15.691 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:06:15.736 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:06:15.894 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:06:15.902 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:06:15.976 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:06:16.235 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:06:16.239 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:06:16.267 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:06:16.413 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+26 мая 2022 - 11:06:16.413 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:06:16.415 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:06:16.420 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:06:16.422 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+26 мая 2022 - 11:06:16.431 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26 мая 2022 - 11:06:16.444 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientController' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/controller/ClientController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.company.UzCardApplication.main(UzCardApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientService' defined in file [/home/us/IdeaProjects/UzCard/target/classes/com/company/service/ClientService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientRepository' defined in com.company.repository.ClientRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 38 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime)! Reason: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract void com.company.repository.ClientRepository.updates(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime) but parameter 'Optional[id]' not found in annotated query 'update ClientEntity set  name= :name where surname = :surname'!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:172)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:139)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 71 common frames omitted
+26 мая 2022 - 11:12:52.001 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 7676 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:12:52.002 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:12:52.003 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:12:52.043 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:12:52.043 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:12:52.686 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:12:52.723 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:12:53.064 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:12:53.069 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:12:53.069 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:12:53.101 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:12:53.101 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1057 ms
+26 мая 2022 - 11:12:53.174 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:12:53.198 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:12:53.250 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:12:53.297 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:12:53.428 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:12:53.437 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:12:53.494 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:12:53.786 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - SQL Warning Code: 0, SQLState: 00000
+26 мая 2022 - 11:12:53.786 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - constraint "uk_bb0kfgqk5olyqio9bejcgu970" of relation "playlist" does not exist, skipping
+26 мая 2022 - 11:12:53.793 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:12:53.797 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:12:53.840 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:12:54.280 - o.s.s.web.DefaultSecurityFilterChain -  INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bf427e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e7e9e39, org.springframework.security.web.context.SecurityContextPersistenceFilter@22c5857c, org.springframework.security.web.header.HeaderWriterFilter@75bac860, org.springframework.security.web.authentication.logout.LogoutFilter@3500aa70, org.springframework.security.web.session.ConcurrentSessionFilter@70e5938d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50246adb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@764ca197, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b4d0e15, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b790be5, org.springframework.security.web.session.SessionManagementFilter@2628392e, org.springframework.security.web.access.ExceptionTranslationFilter@10181e92, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ba3bb15]
+26 мая 2022 - 11:12:54.359 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:12:54.520 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:12:54.654 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.922 seconds (JVM running for 3.487)
+26 мая 2022 - 11:13:04.583 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:13:04.586 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:13:04.594 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:15:05.549 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 7928 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:15:05.550 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:15:05.551 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:15:05.594 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:15:05.594 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:15:06.113 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:15:06.138 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:15:06.463 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:15:06.468 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:15:06.468 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:15:06.502 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:15:06.503 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 908 ms
+26 мая 2022 - 11:15:06.569 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:15:06.585 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:15:06.637 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:15:06.680 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:15:06.842 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:15:06.850 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:15:06.925 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:15:07.199 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:15:07.203 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:15:07.443 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:15:07.606 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:15:07.743 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:15:07.854 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.594 seconds (JVM running for 3.084)
+26 мая 2022 - 11:15:15.865 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 11:15:15.865 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 11:15:15.866 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 11:25:12.364 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:25:12.370 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:25:12.389 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:25:17.415 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 8417 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:25:17.416 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:25:17.416 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:25:17.480 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:25:17.480 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:25:18.016 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:25:18.053 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:25:18.435 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:25:18.440 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:25:18.440 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:25:18.470 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:25:18.470 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 988 ms
+26 мая 2022 - 11:25:18.540 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:25:18.557 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:25:18.602 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:25:18.638 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:25:18.839 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:25:18.852 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:25:18.943 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:25:19.297 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:25:19.303 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:25:19.587 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:25:19.831 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:25:19.981 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:25:20.101 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.932 seconds (JVM running for 3.471)
+26 мая 2022 - 11:25:35.055 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:25:35.058 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:25:35.066 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:25:58.716 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 8553 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:25:58.717 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:25:58.718 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:25:58.755 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:25:58.755 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:25:59.265 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:25:59.290 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:25:59.622 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:25:59.627 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:25:59.627 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:25:59.657 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:25:59.658 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 903 ms
+26 мая 2022 - 11:25:59.728 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:25:59.744 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:25:59.790 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:25:59.832 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:25:59.986 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:25:59.995 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:26:00.071 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:26:00.338 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:26:00.342 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:26:00.581 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:26:00.743 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:26:00.893 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:26:01.040 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.588 seconds (JVM running for 3.041)
+26 мая 2022 - 11:26:17.364 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 11:26:17.364 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 11:26:17.366 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 2 ms
+26 мая 2022 - 11:29:44.699 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:29:44.703 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:29:44.717 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:29:49.813 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 8900 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:29:49.814 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:29:49.815 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:29:49.861 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:29:49.862 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:29:50.390 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:29:50.431 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:29:50.824 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:29:50.829 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:29:50.829 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:29:50.868 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:29:50.868 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1006 ms
+26 мая 2022 - 11:29:50.938 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:29:50.954 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:29:51.005 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:29:51.045 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:29:51.196 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:29:51.205 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:29:51.282 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:29:51.561 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - SQL Warning Code: 0, SQLState: 00000
+26 мая 2022 - 11:29:51.561 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - constraint "uk_492xmgvvn7qbnwhcvpr3yor6h" of relation "card" does not exist, skipping
+26 мая 2022 - 11:29:51.568 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:29:51.575 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:29:51.854 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:29:52.074 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:29:52.210 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:29:52.385 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.853 seconds (JVM running for 3.38)
+26 мая 2022 - 11:30:03.357 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 11:30:03.358 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 11:30:03.359 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 11:30:47.221 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:30:47.226 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:30:47.242 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:30:52.278 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 9104 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:30:52.279 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:30:52.279 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:30:52.319 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:30:52.320 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:30:52.855 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:30:52.881 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:30:53.218 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:30:53.225 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:30:53.225 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:30:53.255 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:30:53.255 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 935 ms
+26 мая 2022 - 11:30:53.324 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:30:53.342 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:30:53.389 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:30:53.431 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:30:53.588 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:30:53.597 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:30:53.673 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:30:53.948 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:30:53.954 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:30:54.244 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:30:54.411 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:30:54.576 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:30:54.711 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.71 seconds (JVM running for 3.174)
+26 мая 2022 - 11:30:57.094 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 11:30:57.094 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 11:30:57.095 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 11:44:37.874 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:44:37.877 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:44:37.883 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:46:41.396 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 9685 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:46:41.397 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:46:41.398 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:46:41.434 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:46:41.434 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:46:42.041 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:46:42.069 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:46:42.467 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:46:42.471 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:46:42.472 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:46:42.507 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:46:42.507 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1072 ms
+26 мая 2022 - 11:46:42.572 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:46:42.589 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:46:42.637 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:46:42.672 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:46:42.834 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:46:42.843 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:46:42.918 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:46:43.203 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - SQL Warning Code: 0, SQLState: 00000
+26 мая 2022 - 11:46:43.203 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - constraint "uk_492xmgvvn7qbnwhcvpr3yor6h" of relation "card" does not exist, skipping
+26 мая 2022 - 11:46:43.209 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:46:43.213 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:46:43.489 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:46:43.649 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:46:43.793 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:46:43.923 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.776 seconds (JVM running for 3.263)
+26 мая 2022 - 11:49:40.345 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:49:40.355 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:49:40.365 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:49:45.810 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 9946 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:49:45.811 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:49:45.812 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:49:45.844 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:49:45.845 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:49:46.364 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:49:46.390 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:49:46.718 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:49:46.722 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:49:46.723 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:49:46.759 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:49:46.759 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 914 ms
+26 мая 2022 - 11:49:46.823 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:49:46.839 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:49:46.890 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:49:46.930 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:49:47.086 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:49:47.095 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:49:47.168 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:49:47.444 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:49:47.448 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:49:47.693 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:49:47.846 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:49:47.988 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:49:48.117 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.646 seconds (JVM running for 3.397)
+26 мая 2022 - 11:50:39.880 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:50:39.884 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 11:50:39.895 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 11:50:45.006 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 10091 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 11:50:45.009 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 11:50:45.011 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 11:50:45.053 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 11:50:45.054 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 11:50:45.578 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 11:50:45.608 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 11:50:46.002 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 11:50:46.007 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 11:50:46.007 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 11:50:46.053 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 11:50:46.053 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 999 ms
+26 мая 2022 - 11:50:46.142 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 11:50:46.159 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 11:50:46.208 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 11:50:46.261 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 11:50:46.437 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 11:50:46.447 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 11:50:46.549 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 11:50:46.841 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 11:50:46.848 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 11:50:47.113 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 11:50:47.307 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 11:50:47.455 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 11:50:47.588 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.839 seconds (JVM running for 3.292)
+26 мая 2022 - 11:51:29.190 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 11:51:29.190 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 11:51:29.191 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 12:04:12.296 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:04:12.302 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 12:04:12.322 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 12:04:17.517 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 10417 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 12:04:17.518 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 12:04:17.519 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 12:04:17.558 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 12:04:17.558 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 12:04:18.109 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 12:04:18.138 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 12:04:18.547 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 12:04:18.552 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 12:04:18.552 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 12:04:18.589 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 12:04:18.589 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1030 ms
+26 мая 2022 - 12:04:18.654 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 12:04:18.671 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 12:04:18.720 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 12:04:18.762 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 12:04:18.949 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 12:04:18.959 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 12:04:19.040 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 12:04:19.312 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 12:04:19.316 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:04:19.558 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 12:04:19.723 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 12:04:19.881 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 12:04:20.023 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.78 seconds (JVM running for 3.313)
+26 мая 2022 - 12:07:21.810 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 12:07:21.811 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 12:07:21.812 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 12:07:21.904 - o.h.e.jdbc.spi.SqlExceptionHelper -  WARN  - SQL Error: 0, SQLState: 23502
+26 мая 2022 - 12:07:21.905 - o.h.e.jdbc.spi.SqlExceptionHelper -  ERROR - ERROR: null value in column "name" violates not-null constraint
+  Подробности: Failing row contains (ff80818180ff21cb0180ff2272860000, 2022-05-26 11:51:29.299763, null, null, null, null, null, ACTIVE, null).
+26 мая 2022 - 12:07:21.906 - o.h.e.j.b.internal.AbstractBatchImpl -  INFO  - HHH000010: On release of batch it still contained JDBC statements
+26 мая 2022 - 12:07:21.920 - o.a.c.c.C.[.[.[.[dispatcherServlet] -  ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [name]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+org.postgresql.util.PSQLException: ERROR: null value in column "name" violates not-null constraint
+  Подробности: Failing row contains (ff80818180ff21cb0180ff2272860000, 2022-05-26 11:51:29.299763, null, null, null, null, null, ACTIVE, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:135)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3571)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:3438)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:3852)
+	at org.hibernate.action.internal.EntityUpdateAction.execute(EntityUpdateAction.java:201)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy125.save(Unknown Source)
+	at com.company.service.ClientService.update(ClientService.java:50)
+	at com.company.controller.ClientController.update(ClientController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:684)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26 мая 2022 - 12:08:01.279 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:08:01.283 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 12:08:01.305 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 12:08:06.117 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 10623 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 12:08:06.118 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 12:08:06.119 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 12:08:06.159 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 12:08:06.159 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 12:08:06.672 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 12:08:06.699 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 12:08:07.051 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 12:08:07.056 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 12:08:07.056 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 12:08:07.093 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 12:08:07.093 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 933 ms
+26 мая 2022 - 12:08:07.164 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 12:08:07.181 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 12:08:07.228 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 12:08:07.274 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 12:08:07.422 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 12:08:07.430 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 12:08:07.497 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 12:08:07.772 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 12:08:07.776 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:08:08.022 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 12:08:08.188 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 12:08:08.328 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 12:08:08.466 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 2.655 seconds (JVM running for 3.326)
+26 мая 2022 - 12:08:18.363 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 12:08:18.363 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 12:08:18.364 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 12:09:03.826 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:09:03.834 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 12:09:03.843 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 12:09:09.677 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 10797 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 12:09:09.678 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 12:09:09.679 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 12:09:09.803 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 12:09:09.803 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 12:09:11.038 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 12:09:11.096 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 12:09:11.653 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 12:09:11.661 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 12:09:11.661 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 12:09:11.708 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 12:09:11.708 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1904 ms
+26 мая 2022 - 12:09:11.797 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 12:09:11.826 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 12:09:11.912 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 12:09:11.972 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 12:09:12.158 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 12:09:12.166 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 12:09:12.234 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 12:09:12.570 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 12:09:12.574 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:09:12.875 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 12:09:13.026 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 12:09:13.185 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 12:09:13.331 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 4.336 seconds (JVM running for 5.232)
+26 мая 2022 - 12:09:57.672 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 12:09:57.673 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 12:09:57.674 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 12:12:13.404 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:12:13.409 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 12:12:13.419 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+26 мая 2022 - 12:12:19.155 - com.company.UzCardApplication -  INFO  - Starting UzCardApplication using Java 17.0.3 on us-HP-Pavilion-Laptop-15-eg0xxx with PID 11114 (/home/us/IdeaProjects/UzCard/target/classes started by us in /home/us/IdeaProjects/UzCard)
+26 мая 2022 - 12:12:19.156 - com.company.UzCardApplication -  DEBUG - Running with Spring Boot v2.7.0, Spring v5.3.20
+26 мая 2022 - 12:12:19.157 - com.company.UzCardApplication -  INFO  - The following 1 profile is active: "dev"
+26 мая 2022 - 12:12:19.203 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+26 мая 2022 - 12:12:19.203 - o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -  INFO  - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+26 мая 2022 - 12:12:19.940 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+26 мая 2022 - 12:12:19.976 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+26 мая 2022 - 12:12:20.350 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+26 мая 2022 - 12:12:20.355 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+26 мая 2022 - 12:12:20.356 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.63]
+26 мая 2022 - 12:12:20.389 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+26 мая 2022 - 12:12:20.389 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 1185 ms
+26 мая 2022 - 12:12:20.455 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+26 мая 2022 - 12:12:20.471 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.9.Final
+26 мая 2022 - 12:12:20.519 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+26 мая 2022 - 12:12:20.557 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+26 мая 2022 - 12:12:20.722 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+26 мая 2022 - 12:12:20.732 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+26 мая 2022 - 12:12:20.816 - org.hibernate.id.UUIDHexGenerator -  WARN  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+26 мая 2022 - 12:12:21.098 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+26 мая 2022 - 12:12:21.102 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:12:21.359 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+26 мая 2022 - 12:12:21.525 - o.s.b.d.a.OptionalLiveReloadServer -  INFO  - LiveReload server is running on port 35729
+26 мая 2022 - 12:12:21.677 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+26 мая 2022 - 12:12:21.810 - com.company.UzCardApplication -  INFO  - Started UzCardApplication in 3.019 seconds (JVM running for 3.691)
+26 мая 2022 - 12:12:45.874 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26 мая 2022 - 12:12:45.874 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+26 мая 2022 - 12:12:45.875 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+26 мая 2022 - 12:26:20.456 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+26 мая 2022 - 12:26:20.459 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+26 мая 2022 - 12:26:20.467 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.

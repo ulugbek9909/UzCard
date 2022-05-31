@@ -1,4 +1,4 @@
-package com.company.exceptions;
+package com.company.exception;
 
 public class ItemAlreadyExistsException extends RuntimeException{
     public ItemAlreadyExistsException(String message) {

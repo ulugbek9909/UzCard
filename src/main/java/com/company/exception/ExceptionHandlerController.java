@@ -1,4 +1,4 @@
-package com.company.exceptions;
+package com.company.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class ExceptionHandlerController {
 
     @ExceptionHandler({ItemAlreadyExistsException.class, ItemNotFoundException.class,
-            AppBadRequestException.class, NullPointerException.class})
+            AppBadRequestException.class, IllegalArgumentException.class})
     public ResponseEntity<?> handleBadRequestException(RuntimeException e) {
         return ResponseEntity.badRequest().body(e.getMessage());
     }
